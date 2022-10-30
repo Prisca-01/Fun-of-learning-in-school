@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding: 0 14rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    color: rgb(254, 126, 201);
+    font-weight: bold;
+}
+
+.navbar .nav {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.navbar .nav li {
+    list-style: none;
+}
+
+.navbar .nav a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar .nav a:hover {
+    color: rgb(92, 87, 82);
+}
+
+.first {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto 0;
+    padding: 0 11rem;
+}
+
+.first .text {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 566px;
+    height: 400px;
+    gap: 2rem;
+    margin-top: 260px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.first .text h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(72, 141, 244);
+    text-align: center;
+}
+
+.first .text p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    width: 380px;
+    text-align: center;
+}
+
+.second {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.second .services {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.second .services .box {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    color: #fff;
+}
+
+.second .services .box i {
+    font-size: 6rem;
+}
+
+.second .services .box p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.third {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+}
+
+.third h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: rgb(72, 141, 244);
+    text-align: center;
+}
+
+.third p {
+    text-align: center;
+    width: 920px;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    line-height: 2;
+}
+
+.fourth {
+    width: 100%;
+    height: 1150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.fourth .about {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(159, 165, 164);
+}
+
+.fourth h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.fourth .grid-container {
+    display: grid;
+    padding: 20px;
+    margin: 50px;
+    grid-template-areas:
+        "a a a a a a b b b c c c"
+        "a a a a a a d d d e e e";
+    /* grid-template-columns: 250px 250px 250px; */
+    /* grid-template-rows: 120px 120px; */
+    gap: 20px;
+}
+
+.fourth .grid-container .grid-item1 {
+    grid-area: a;
+}
+
+.fourth .grid-container .grid-item2 {
+    grid-area: b;
+}
+
+.fourth .grid-container .grid-item3 {
+    grid-area: c;
+}
+
+.fourth .grid-container .grid-item4 {
+    grid-area: d;
+}
+
+.fourth .grid-container .grid-item5 {
+    grid-area: e;
+}
+
+.fourth .grid-container .grid-item2 .box {
+    width: 300px;
+    height: 370px;
+    background-color: rgb(235, 252, 252);
+    padding: 20px;
+}
+
+.fourth .grid-container .grid-item3 .box {
+    width: 300px;
+    height: 370px;
+    background-color: rgb(255, 242, 250);
+    padding: 20px;
+}
+
+.fourth .grid-container .grid-item2 .box i,
+.fourth .grid-container .grid-item3 .box i {
+    font-size: 4rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.fourth .grid-container .grid-item2 .box .head,
+.fourth .grid-container .grid-item3 .box .head {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: rgb(159, 165, 164);
+}
+
+.fourth .grid-container .box .text {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.fourth .grid-container .grid-item2 .box .link,
+.fourth .grid-container .grid-item3 .box .link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.fifth {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(254, 202, 2);
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.fifth .head {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fifth .head .key {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.fifth .head h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.fifth .boxes {
+    width: 1150px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    margin-top: 0;
+}
+
+.fifth .boxes .box {
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: #fff;
+    padding: 0 10px;
+}
+
+.fifth i {
+    font-size: 4rem;
+    border-radius: 50%;
+    background-color: rgb(254, 202, 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.fifth .service {
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.fifth .boxes .box .text {
+    width: 200px;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+.sixth {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+}
+
+.sixth .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1150px;
+    margin-top: 50px;
+    gap: 4rem;
+}
+
+/* .sixth .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}  */
+.sixth .text h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.sixth .flex .p1 {
+    width: 550px;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.sixth .flex .p2 {
+    width: 550px;
+    font-size: 1.3rem;
+    line-height: 1.7;
+}
+
+.seventh {
+    width: 100%;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 196, 193);
+}
+
+.seventh .boxes {
+    width: 100%;
+    /* height: 650px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.seventh .boxes .box2 {
+    background-color: #fff;
+    width: 380px;
+    height: 500px;
+    padding: 2.5rem 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.seventh .boxes .box2 .head {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 280px;
+}
+
+.seventh .boxes .box2 .text {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.eight {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eight .about {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: rgb(159, 165, 164);
+}
+
+.eight h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.eight .grid {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 90px;
+}
+
+.eight .grid .grid1,
+.eight .grid .grid3 {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+}
+
+.eight .grid .grid1 .head,
+.eight .grid .grid3 .head {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.eight .grid .grid1 .text,
+.eight .grid .grid3 .text {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.eight .grid .grid1 .head,
+.eight .grid .grid1 .text {
+    text-align: right;
+}
+
+.ninth {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 196, 193);
+}
+
+.ninth .about {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.ninth h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.ninth .boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.ninth .box2 {
+    background-color: #fff;
+    height: 650px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+ 
+.ninth .box2 .head {
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.ninth .box2 .text {
+    font-size: 1.3rem;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+.ninth .box2 .link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.contact-icons {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons .icon {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-icons .icon i {
+    color: #fff;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.contact-icons .icon p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(254, 126, 201);
+    gap: 7rem;
+}
+
+.footer .footer-text {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .footer-text .text .head {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer .footer-icons i {
+    color: #fff;
+    margin: auto 12px;
+}
